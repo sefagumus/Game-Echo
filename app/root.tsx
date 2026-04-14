@@ -1,3 +1,6 @@
+// Copyright (c) Valuetics Ltd. This is a proprietary software with no public license.
+// Any unauthorized use, copying, or distribution of this file via any medium is strictly prohibited.
+
 import {
   isRouteErrorResponse,
   Links,

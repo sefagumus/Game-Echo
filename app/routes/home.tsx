@@ -1,23 +1,22 @@
-import { Container, Stack, Title, Text, Button, Group } from "@mantine/core";
-import { useNavigate } from "react-router";
+// import { games } from "../components/games";
+// import styles from "./home.module.css";
+import { ArticleCardImage } from "../components/ArticleCardImage";
+import classes from "../components/ArticleCardImage.module.css";
 
 export default function HomePage() {
-  const nav = useNavigate();
-
   return (
-    <Container>
-      <Stack>
-        <Title>Game Echo</Title>
+    <div>
+      <div className={classes.title}>Games</div>
+      {/* 
+      {games.map((game) => (
+        <div key={game.id}>
+          <img className={styles.gameLogo} src={game.logo} alt={game.name} />
+        </div>
+      ))} */}
 
-        <Text>
-          A social platform where gamers can share information about their
-          games.
-        </Text>
-
-        <Group>
-          <Button onClick={() => nav("/games")}>Explore the Games</Button>
-        </Group>
-      </Stack>
-    </Container>
+      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+        <ArticleCardImage />
+      </div>
+    </div>
   );
 }

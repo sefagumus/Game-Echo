@@ -1,0 +1,22 @@
+.card {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; /* Görselin kendini tekrar etmesini engeller */
+  background-color: #1a1b1e;
+}
+
+.title {
+  font-family: Outfit, var(--mantine-font-family);
+  font-weight: 600;
+  color: var(--mantine-color-white);
+  line-height: 1.2;
+  font-size: 32px;
+  margin-top: var(--mantine-spacing-xs);
+}
